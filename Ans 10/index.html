@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+              sm: '280px',
+              md: '768px',
+              lg: '1153px',
+              xl: '1440px'
+            },
+            extend: {
+              colors: {
+                myskyBlue: '#00BAF2',
+                myBlue: '#002970',
+                myDark: '#000000',
+                myLight: '#ffffff',
+                myGray: '#808080',
+                blueHover: '#0d3e80',
+                bgColor: '#f5f7fa',
+              }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous" />
+    <title>Responsive page</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar flex justify-around">
+            <div class="leftnav w-[20%] h-12 bg-myBlue"></div>
+            <div class="h-12 w-[70%] bg-myGray rightnav"></div>
+        </div>
+
+        <!-- hero -->
+        <div class="hero flex justify-around mt-10">
+            <div class="content h-[200px] md:h-[300px] lg:h-[350px] w-[95%] bg-myGray"></div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer mt-10 flex flex-col items-center md:justify-around md:flex-row">
+            <div class="leftfooter bg-myBlue mt-4 w-[90%] md:w-[28%] h-[200px] md:h-[250px]"></div>
+            <div class="centerfooter bg-myBlue mt-4 w-[90%] md:w-[28%] h-[200px] md:h-[250px]"></div>
+            <div class="rightfooter bg-myBlue mt-4 w-[90%] md:w-[28%] h-[200px] md:h-[250px]"></div>
+        </div>
+
+        <!-- sm footer -->
+        <div class="hidden md:flex mt-4 justify-around">
+            <div class="smfooter w-[90%] bg-myGray h-[150px]"></div>
+            <div class="padding-left: 0"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
